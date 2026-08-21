@@ -1,0 +1,12 @@
+streamlit>=1.35.0
+plotly>=5.20.0
+pandas>=1.5.3
+numpy>=1.26.4
+pytz
+python-dotenv
+yfinance
+smartapi-python
+pyotp
+logzero
+websocket-client
+requests
