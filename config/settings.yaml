@@ -1,0 +1,40 @@
+app:
+  name: AI Trading Agent - NSE F&O
+  version: "1.0.0"
+  environment: development
+  trading_mode: paper
+  enable_live_trading: false
+
+instruments:
+  - symbol: NIFTY
+    exchange: NSE
+    segment: INDEX
+    futures_symbol: NIFTY-FUT
+    lot_size: 50
+    tick_size: 0.05
+  - symbol: BANKNIFTY
+    exchange: NSE
+    segment: INDEX
+    futures_symbol: BANKNIFTY-FUT
+    lot_size: 15
+    tick_size: 0.05
+
+timeframes:
+  primary: "5min"
+  secondary: "15min"
+  confirmation: "1min"
+
+market_hours:
+  pre_market_start: "09:00"
+  market_open: "09:15"
+  avoid_open_minutes: 15
+  midday_start: "11:30"
+  closing_start: "14:45"
+  market_close: "15:30"
+  expiry_special_rules: true
+
+data:
+  candle_history_days: 365
+  options_chain_depth: 10
+  refresh_interval_seconds: 60
+  stale_data_threshold_seconds: 120

@@ -1,0 +1,30 @@
+risk:
+  max_risk_per_trade: 0.005
+  max_daily_loss: 0.02
+  max_weekly_loss: 0.05
+  max_trades_per_day: 10
+  max_consecutive_losses: 3
+  max_open_positions: 3
+  min_risk_reward: 1.5
+  min_confidence: 70
+
+position_sizing:
+  method: fixed_risk
+  default_capital: 500000
+
+stop_loss:
+  method: atr_based
+  atr_multiplier: 1.5
+  min_sl_points: 20
+  max_sl_points: 150
+
+targets:
+  method: fixed_rr
+  default_rr: 2.0
+  trail_after_r: 1.0
+
+filters:
+  max_spread_pct: 0.5
+  min_option_volume: 500
+  min_option_oi: 1000
+  max_iv_percentile: 80

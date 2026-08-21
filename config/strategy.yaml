@@ -1,0 +1,47 @@
+strategy:
+  active: vwap_ema_price_action
+  min_confidence: 70
+
+  signal_weights:
+    trend: 20
+    price_action: 20
+    vwap: 10
+    momentum: 10
+    volume: 10
+    futures_oi: 10
+    options_oi: 10
+    iv: 5
+    market_regime: 5
+
+  confidence_thresholds:
+    strong: 80
+    valid: 70
+    weak: 60
+    no_trade: 0
+
+  market_regime:
+    adx_strong_trend: 25
+    adx_weak_trend: 15
+    rsi_overbought: 70
+    rsi_oversold: 30
+
+  time_rules:
+    avoid_first_minutes: 15
+    avoid_last_minutes: 15
+    expiry_day_caution: true
+
+  indicators:
+    ema_fast: 9
+    ema_mid: 21
+    ema_slow: 50
+    ema_trend: 200
+    rsi_period: 14
+    atr_period: 14
+    bb_period: 20
+    bb_std: 2.0
+    adx_period: 14
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    supertrend_period: 10
+    supertrend_multiplier: 3.0

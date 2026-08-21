@@ -1,0 +1,28 @@
+{
+  "session_date": "2026-08-18",
+  "symbols": [
+    "NIFTY"
+  ],
+  "bars_processed": 3,
+  "signals_generated": 3,
+  "trade_summary": {
+    "trades": 0,
+    "session_pnl": 0,
+    "win_rate": 0
+  },
+  "order_summary": {
+    "total": 0,
+    "filled": 0,
+    "pending": 0,
+    "cancelled": 0,
+    "rejected": 0
+  },
+  "balance": {
+    "capital": 500000,
+    "available_margin": 500000,
+    "used_margin": 0.0,
+    "session_pnl": 0.0,
+    "unrealised_pnl": 0,
+    "open_positions": 0
+  }
+}
